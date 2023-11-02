@@ -1,0 +1,74 @@
+:root{
+    --color-primario: #1d9bf0;
+}
+
+
+.header-link{
+    background-color: white;
+    border: none;
+    font-size: 20px;
+    border-radius: 99px !important;
+    transition: .2s;
+}
+
+.header-link:hover{
+    background-color: rgb(230, 230, 230) !important;
+    transition: .2s;
+    border-radius: 99px !important;
+}
+
+
+.heaeder-icon{
+    font-size: 32px !important;
+}
+
+.header-btn-tweet button{
+    background-color: var(--color-primario);
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 99px;
+    height: 100%;
+    width: 100%;
+    box-shadow:  0px 1px 2px 1px rgba(0, 0, 0, 0.089);
+}
+
+.header-btn-tweet button:hover{
+    background-color:#2489cc;
+    transition: .3s;
+}
+
+.header-btn-tweet-sm button{
+    background-color: var(--color-primario);
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 99px;
+    padding: 0px;
+    box-shadow:  0px 1px 2px 1px rgba(0, 0, 0, 0.089);
+    height: 50px;
+    width: 50px;
+}
+
+
+@media (max-width: 1264px) {
+    .header-text{
+        display: none;
+    }
+    .header-btn-tweet{
+        display: none !important;
+    }
+    .header-btn-tweet-sm{
+        display: flex !important;
+    }
+    .web{
+        display: none !important;
+    }
+    .header-links-container{
+        align-items: center;
+    }
+}
+
+.active div{
+    font-weight: bold !important;
+}

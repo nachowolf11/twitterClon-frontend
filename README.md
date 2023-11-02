@@ -1,0 +1,3 @@
+- Hacer un hook que realice fetch de todos los tweets.
+- Si le paso el parametro filter en true, me trae solo los tweets de los usuarios que sigue el usuario en sesion.
+- Si le pago el parametro user con un id, me devuelve los tweets de ese usuario.

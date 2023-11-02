@@ -1,0 +1,151 @@
+@font-face{
+    font-family: 'Chirp';
+    src: url('./assets/Fonts/Cantarell-Regular.ttf')
+}
+
+:root {
+    --primary-main: #1d9bf0;
+    --primary-dark: #2780bb;
+    --text-light: #73767c;
+    --border-light: #bebfc4;
+  }
+
+a:link, a:visited {
+    text-decoration:none;
+}
+
+.btn{
+    transition: .2s;
+}
+
+.btn:hover{
+    background-color: rgb(230, 230, 230) !important;
+    transition: .2s;
+}
+
+.tweet-btn{
+    display: flex;
+    align-items: center;
+    color: var(--text-light);
+    cursor: pointer;
+}
+
+.tweet-btn div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 99px;
+    margin: -8px;
+    height: 35px;
+    width: 35px;
+}
+
+.btn-like:hover{
+    color: rgb(255, 31, 117);
+    transition: 0.3s;
+}
+
+.btn-like:hover div{
+    background-color: rgba(255, 31, 117, 0.068);
+}
+
+.btn-comment:hover{
+    color: #1d9bf0;
+}
+
+.btn-comment:hover div{
+    background-color: #1d9cf010;
+    transition: 0.3s;
+}
+
+.btn-retweet:hover{
+    color: rgb(25, 177, 94);
+}
+
+.btn-retweet:hover div{
+    background-color: rgba(25, 177, 94, 0.103);
+    transition: 0.3s;
+}
+
+.btn-tweet{
+    background-color: var(--primary-main);
+    color: white;
+    font-size: 16px;
+    padding: 10px 16px 10px 16px;
+    border: none;
+    border-radius: 99px;
+    box-shadow:  0px 1px 2px 1px rgba(0, 0, 0, 0.041);
+}
+
+.btn-tweet:disabled{
+    background-color: #a7dcff;
+}
+
+.btn-tweet:hover{
+    background-color: var(--primary-dark);
+    transition: .2s;
+}
+
+.user-btn{
+    width:100px;
+    height:34px;
+    font-size:15px;
+    margin-top:0px;
+    font-weight:bold;
+    border-radius:99px;
+    border: none;
+}
+
+.user-btn-follow{
+    background:black;
+    color:white;
+    border: 1px solid black;
+}
+
+.user-btn-follow:hover{
+    background-color: rgb(43, 43, 43);
+    border: 1px solid rgb(43, 43, 43);
+    transition: .2s;
+}
+
+.user-btn-following{
+    background:white;
+    color:black;
+    border: var(--border-light) 1px solid;
+    transition: .2s;
+}
+
+.user-btn-following:hover{
+    color: rgb(255, 41, 77);
+    background-color: rgba(255, 50, 102, 0.068);
+    border: 1px solid rgb(255, 117, 140);
+    transition: .2s;
+}
+
+.user-btn-following:hover .user-span-following{
+    display: none;
+}
+
+.user-span-unfollow{
+    display: none;
+}
+
+.user-btn-following:hover .user-span-unfollow{
+    display: inline;
+}
+
+.tweet-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 99px;
+    transition: .2s;
+}
+
+.tweet-img:hover{
+    filter: brightness(90%);
+    transition: .3s;
+}
+
+.user-img{
+    filter: brightness(70%);
+}

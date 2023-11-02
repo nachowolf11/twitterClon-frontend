@@ -1,0 +1,80 @@
+.btn-footer button{
+    font-weight: bold !important;
+    font-size: 0.8em !important;
+    border-radius: 30px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.btn-login:hover{
+    background-color: rgba(255, 255, 255, 0.13) !important;
+}
+
+.btn-signup:hover{
+    background-color: rgb(216, 216, 216) !important;
+}
+
+@media (max-width: 1264px){
+    .footer-space{
+        width: 88px !important;
+    }
+}
+
+@media (max-width: 1077px){
+    .footer-container{
+       width: 920px !important;
+    }
+}
+
+@media (max-width: 1007px){
+    .footer-space{
+        width: 68px !important;
+    }
+}
+
+@media (max-width: 987px){
+    .footer-container{
+       width: 600px !important;
+    }
+    .footer-space{
+        display: none !important;
+    }
+}
+
+@media (max-width: 687px){
+    .footer-text{
+        display: none !important;
+    }
+    .footer-container{
+        width: 100% !important;
+        justify-content: center !important;
+    }
+    .btn-footer{
+        width: 100% !important;
+        justify-content: center !important;
+    }
+    .btn-footer button{
+        flex-grow: 1;
+    }
+}
+
+@media (max-width: 499px){
+    .footer{
+        background-color: white !important;
+    }
+    .btn-login{
+        border: 1px solid rgb(209, 209, 209) !important;
+    }
+    .btn-signup{
+        color: white !important;
+    }
+}
+
+@media (min-width: 500px){
+    .btn-login{
+        color: white !important;
+    }
+    .btn-signup{
+        background-color: white !important;
+    }
+}

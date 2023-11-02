@@ -1,0 +1,164 @@
+:root{
+    --color-primario: #1d9bf0;
+}
+
+button{
+    cursor: pointer;
+}
+
+/* Modal */
+.ReactModalPortal > div{
+    opacity: 0;
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: opacity .2s ease-in-out;
+    z-index: 999;
+}
+
+.modal-fondo {
+    background-color: rgba(0, 0, 0, 0.3);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: fixed;
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+    opacity: 1;
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+    opacity: 0;
+}
+
+.modal {
+    background: white;
+    border-radius: 15px;
+    color: rgb(51, 51, 51);
+    display: inline;
+    outline: none;
+    height: 650px;
+    width: 600px;
+}
+
+@media (max-width: 687px){
+    .modal{
+        width: 100vw;
+        height: 100%;
+        border-radius: 0px;
+    }
+}
+
+.btn-login-modal{
+    background-color: white;
+    border: 1px rgb(218, 218, 218) solid;
+    border-radius: 99px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 12px;
+    padding: 10px 0px 10px 0px;
+    width: 300px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-login-modal:hover{
+    background-color: rgb(230, 230, 230);
+    transition: .2s;
+}
+
+.div-input-modal{
+    height: 56px;
+    border: 2px rgb(218, 218, 218) solid;
+    border-radius: 4px;
+    padding: 10px 10px 0px 10px;
+}
+
+.div-input-modal:focus-within{
+    border: var(--color-primario) 2px solid;
+}
+
+.div-input-modal input{
+    width: 100%;
+    border: none;
+    height: 30px;
+    font-size: 16px;
+    padding: 0px;
+}
+
+.div-input-modal input:focus{
+    outline: none;
+}
+
+.input-modal:focus ~ span, .input-modal:valid ~ span {
+    top: 10px;
+    font-size: 14px;
+    color: var(--color-primario);
+}
+
+.div-input-modal span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 17px;
+  pointer-events: none;
+  transition: 0.2s;
+}
+
+.div-input-modal .date-span {
+    top: 10px;
+    font-size: 14px;
+  }
+
+.btn-modal{
+    width: 300px;
+    height: 34px;
+    border-radius: 99px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+}
+
+.following{
+    color: white;
+    background-color: black;
+}
+
+.following:hover{
+    background-color: rgb(31, 30, 30);
+    transition: 0.2s;
+}
+
+.password{
+    color: black;
+    background-color: white;
+    border: 1px rgb(218, 218, 218) solid;
+}
+
+.password:hover{
+    background-color: rgb(223, 223, 223) !important;
+    transition: 0.2s;
+}
+
+.close{
+    font-size: 12px !important;
+    height: 30px;
+    width: 30px;
+}
+
+.close:hover{
+    border-radius: 99px !important;
+    transition: 0.2s;
+    background-color: rgb(223, 223, 223) !important;
+}
+
+.btn-modal:disabled{
+    background-color: grey;
+}

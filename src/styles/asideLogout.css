@@ -1,0 +1,57 @@
+:root{
+    --color-primario: #1d9bf0;
+}
+
+.aside-container{
+    border: 1px rgb(238, 238, 238) solid !important;
+    border-radius: 15px !important;
+    margin: 12px 0px 13px 0px;
+    padding: 10px;
+}
+
+.btn-aside{
+    background-color: white;
+    border: 1px rgb(218, 218, 218) solid;
+    border-radius: 99px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 12px;
+    padding: 10px 0px 10px 0px;
+    width: 298px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-aside:hover{
+    background-color: rgb(230, 230, 230);
+    transition: .2s;
+}
+
+.aside-terms{
+    margin-bottom: 12px !important;
+}
+
+.aside-terms span{
+    color: var(--color-primario);
+}
+
+.aside-icon{
+    font-size: 22px !important;
+}
+
+.aside-links span{
+    font-size: 14px;
+    margin-right: 10px;
+    letter-spacing: -0.5px;
+}
+
+@media (max-width: 1077px) {
+    aside{
+        width: 288px !important;
+    }
+    .btn-aside{
+        width: 264px !important;
+    }
+}
